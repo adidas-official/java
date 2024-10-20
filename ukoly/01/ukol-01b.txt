@@ -1,0 +1,80 @@
+Zadání úkolu - 01: (Téma 2)
+
+1)
+Definujte statickou třídu DatoveTypy se statickými veřejnými (public) metodami realizující tyto úkoly:
+
+o) Metod u_o() : void - vyzkoušejte zobrazení výrazu 6 + 4 a výrazu "" + 6 + 4 . 
+
+i) Metoda u_i() : void - načte ze standardního vstupu (zadané na klávesnici) hodnoty primitivních datových typů celé číslo (byte, int, long), 
+číslo s desetinnou částí (float, double), znak a text (řetězec); uloží hodnoty do proměnných příslušného typu a hodnoty proměných zobrazí. 
+
+Pozn: Ošetřete chybové stavy. Pro zadání klíčové hodnoty se zobrazí typ chybového stavu - neplatná hodnota, překročen rozsah hodnoty. 
+Otestujte chybového stavy pro každou hodnotu.
+
+ii) Metoda u_ii() : void - provede deklaraci proměnných jednoduchého datového typu s inicializací a definici konstanty.
+
+Pozn: Použijte datové typy byte, int, long, float, double; signed/unsigned; znak a text.
+
+iii) 
+
+Metoda u_iii() : String - načte zvlášť údaj jméno a údaj příjmení a zajistí zobrazení sestaveného jména a příjmení a iniciály.  
+
+Metoda u_iv(String jmeno, String prijmeni) : String - návratovou hodnotou se vrátí text obsahující jméno a příjmení oddělené jednou mezerou (tento znak mezery bude definován v konstantě). 
+Pozn: Pro znak mezery nadefinujte konstantu uvnitř metody. 
+
+Metoda u_v(String jmeno, String prijmeni) : String - návratovou hodnotou vrátí iniciály jména a příjmení (počáteční písmena jako jeden text).
+
+iv) 
+
+Metoda u_vi_datovetypy() : void - v přehledové tabulce zobrazí datové typy jazyka Java: 
+název datového typu, název obalovací třídy, velikost proměnné v paměti a to jak v bytech, tak i bitech (použijte atribut obalovací třídy a pro 
+přepočet si nadefinujte vlastní konstantu(!)). U číselných datových typů bude uveden rozsah znaménkového a neznaménkové. 
+
+Využijte znaky tabulky ASCII pro realizaci tabulky a pro zarovnání sloupců použijte tabulátor. 
+
+
+2)  Definujte třídu ZnakText s následujícími statickými metodami:
+
+Problém: "Pro zadaný znak zobrazí jeho ASCII kód a v desítkové (dekadické) a šestnáctkové (hexadecimální) soustavě." 
+	a) Vytvořte metodu DejInfoZnak(z : char) : string, která poskytne návratovou hodnotou sestavený výsledek. Např. 'a'<tab>97<tab>61H 
+	b) Vytvořte metodu TiskInfoZnak(z : char) : void, která bude mít jako parametr znak a tato metoda zajístí zobrazení potřebných informací. 
+	Vyzkoušejte funčknost třídy (modulu) v programu. 
+
+Problém: "ASCII tabulka velkých a malých písmen anglické abecedy, a cifer." 
+	c) Vytvořte metodu tiskASCII() : void, která v přehledové tabulce vytiskne ASCII kódy písmen anglické abecedy (velká a malá písmena) 
+	a ASCII kódy znaků cifer (dekadicky a hexadecimálně). A to tak, aby příslušná velká a malá písmena 
+	byla na stejném řádku, tedy více sloupcová tabulka. 
+	
+	-------------------------------------------------
+	|	znak	DEC		HEX		znak	DEC		HEX	|
+	-------------------------------------------------
+	|	'a'		97		61		'A'		65		41	|
+	....
+	-------------------------------------------------
+	
+Pozn: použijte pro zarovnání tabulátor a speciální znaky pro orámování "tabulky", které najdeme v ASCII tabulce. Implementaci řešte ve static metodě.
+	
+	Vytvořte metodu DejTabulkuASCII() : String, která sestaví přehledovou ASCII tabulku a výsledek vrátí návratovou hodnotou. 
+	Upravte předcházející metodu tak, aby využila této metody. 
+
+Vyzkoušejte funkčnost třídy (modulu) v programu.
+
+3. Realizace operace načtení údaje ze standardního vstupu. Obsluha chybových stavů a ošetření chybového stavu. 
+
+	Vytvořte modul (třídu) NacteniHodnot se statickými metodami, které zajistí načtení hodnoty určitého typu ze standardního vstupu. Definujte metody pro načtení hodnoty typu: short, int, float, double, String a char. 
+	Metody pojmenujte: nacti_short() : Short, nacti_int() : Integer, … 
+
+	Metoda bude indikovat chybové stavy (FormatException a NumberFlowException). Metody vyzkoušejte a ověřte zachycení chybových stavů v konzolové aplikaci. Program napíše informaci o chybě: 'Špatný formát údaje' nebo 'Překročen rozsah údaje'.
+
+	Pozn: Metody třídy nebudou informaci zobrazovat, informace o chybě je zobrazena až v programu. 
+
+	Vyzkoušejte funkčnost metod tak, že se hodnota uchová do proměnné datového typu. Jaký je využití toho, že třída vrací proměnnou typu obalovací třídy?
+
+---------------------------------------------------------------
+
+Odevzdání úkolu:
+- Soubory s definicemi tříd, soubor s hlavní funkcí dokladující ověření implementovaných úloh. 
+
+
+
+
