@@ -6,7 +6,7 @@ class Animal {
     
 }
 
-class Lion extends Animal implements SoundMaker {
+// class Lion extends Animal implements SoundMaker {
     
 
-}
+// }
