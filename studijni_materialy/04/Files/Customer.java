@@ -1,0 +1,19 @@
+import java.io.Serializable;
+
+public class Customer implements Serializable {
+
+    String name;
+    String surname;
+    int age;
+
+    public Customer(String name, String surname, int age) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + surname + " age: " + age;
+    }
+}
